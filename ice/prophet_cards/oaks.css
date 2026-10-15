@@ -1,0 +1,23 @@
+body { 
+    font-family: Helvetica, Arial, sans-serif;
+}
+.quote {
+    font-family: "Brush Script MT", cursive;
+}
+.card {
+    background-color: #008DB1;
+    width: fit-content;
+    margin: 20px auto;
+    text-align: center;
+}
+h1 {
+    color: #FFFFFE;
+}
+.card a {
+    color: #91E4FB;
+}
+.card ul{
+    width: fit-content;
+    margin: 20px auto;
+    text-align: left;
+}
