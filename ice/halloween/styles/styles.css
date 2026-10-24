@@ -1,0 +1,68 @@
+/* Add your CSS here to style your halloween page */
+body {
+    margin: 0;
+    background-color: #160b24;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: #2d164d;
+    padding: 20px;
+    border-bottom: 4px solid #ff7518;
+}
+
+nav ul { 
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav li {
+    color: #ffd166;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+h1 {
+    color: #ff7518;
+    text-align: center;
+    font-size: 60px;
+}
+main img {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+}
+section {
+    background-color: #2d164d;
+    border: 2px solid #ff7518;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+h2 {
+    color: #ffd166;
+    text-align: center;
+    font-size: 32px;
+}
+p {
+    color: #f0e6ff;
+    line-height: 1.6;
+    font-size: 16px;
+}
+footer {
+    text-align: center;
+    background-color: #0d0615;
+    color: #ffd166;
+    padding: 15px;
+    margin-top: 30px;
+}
+nav li:hover {
+    color: #ff7518;
+    cursor: pointer;
+}
+section:hover {
+    background-color: #43205f;
+    transform: scale(1.02);
+}
