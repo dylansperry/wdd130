@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eef4f7;
+    color: #243447;
+
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+}
+
+header {
+    grid-area: header;
+    padding: 2rem;
+    text-align: center;
+    background-color: #243447;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #4f6d7a;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 1rem;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #f2c14e;
+}
+
+main {
+    grid-area: main;
+    width: 85%;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 2px 8px #c7d2d9;
+}
+
+main h2,
+main h3 {
+    color: #243447;
+}
+
+main img {
+    display: block;
+    width: 250px;
+    margin: 1rem auto;
+}
+
+table {
+    width: 100%;
+    margin: 2rem 0;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 1rem;
+    border: 1px solid #4f6d7a;
+    text-align: left;
+}
+
+th {
+    background-color: #4f6d7a;
+    color: white;
+}
+
+form {
+    display: grid;
+    gap: 0.75rem;
+    margin-top: 2rem;
+}
+
+input,
+button {
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #f2c14e;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    grid-area: footer;
+    padding: 1rem;
+    text-align: center;
+    background-color: #243447;
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    main {
+        width: 80%;
+        padding: 1rem;
+    }
+}
